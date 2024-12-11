@@ -1,25 +1,18 @@
 import "./styles.css";
+import { drawHomepage } from "./homepage.js";
 
 alert("AAAAH!!!");
+
+const homeButton = document.querySelector("button:nth-of-type(1)");
+
 const content = document.getElementById("content");
 
-const textWrapper = document.createElement("div");
-textWrapper.classList.add("text-wrapper");
-content.appendChild(textWrapper);
+drawHomepage();
 
-const footer = document.createElement("div");
-footer.classList.add("footer");
-footer.textContent = "Made by Kate Schumacher";
-content.appendChild(footer);
+homeButton.addEventListener("click", (e) => {
+    console.log("Erasing content.");
+    content.innerHTML = "";
+    drawHomepage();
+});
 
-addItem("small", textWrapper, "You can eat them.");
-addItem("big", textWrapper, "Eat Sanrio Characters.");
-addItem("black-bar", footer, "");
-
-function addItem(classToAdd, appendTo, text, type="div") {
-    const newElement = document.createElement(type);
-    newElement.classList.add(classToAdd);
-    newElement.textContent = text;
-    appendTo.appendChild(newElement);
-}
-
+export { content };

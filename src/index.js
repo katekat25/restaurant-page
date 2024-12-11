@@ -6,6 +6,8 @@ alert("AAAAH!!!");
 
 const homeButton = document.querySelector("button:nth-of-type(1)");
 const menuButton = document.querySelector("button:nth-of-type(2)");
+const aboutButton = document.querySelector("button:nth-of-type(3)");
+const contactButton = document.querySelector("button:nth-of-type(4)");
 
 const content = document.getElementById("content");
 
@@ -25,10 +27,10 @@ function drawPage(pageFunction) {
     pageFunction();
 }
 
-function addItem(classToAdd, appendTo, text, type = "div") {
+function addItem(classToAdd, appendTo, innerHTML, type = "div") {
     const newElement = document.createElement(type);
     newElement.classList.add(classToAdd);
-    newElement.textContent = text;
+    newElement.innerHTML = innerHTML;
     appendTo.appendChild(newElement);
 }
 

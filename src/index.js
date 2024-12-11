@@ -1,9 +1,10 @@
-import backgroundImg from "./assets/purin.jpg";
+import "./styles.css";
 
 alert("AAAAH!!!");
 const content = document.getElementById("content");
 
 const textWrapper = document.createElement("div");
+textWrapper.classList.add("text-wrapper");
 content.appendChild(textWrapper);
 
 addItem("small", textWrapper, "You can eat them.");

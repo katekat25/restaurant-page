@@ -8,7 +8,6 @@ alert("AAAAH!!!");
 const homeButton = document.querySelector("button:nth-of-type(1)");
 const menuButton = document.querySelector("button:nth-of-type(2)");
 const aboutButton = document.querySelector("button:nth-of-type(3)");
-const contactButton = document.querySelector("button:nth-of-type(4)");
 
 const content = document.getElementById("content");
 

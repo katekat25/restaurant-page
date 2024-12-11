@@ -12,7 +12,21 @@ body {
 
 /*Page wrapper*/
 
-#content {
+#content.menu {
+    margin: auto;
+}
+
+.menu-wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.menu-item {
+    height: 200px;
+    background-color: rgb(255,235,205,0.9);
+    border-radius: 5px;
 }
 
 /*Nav bar*/

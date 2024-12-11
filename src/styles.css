@@ -18,11 +18,12 @@ body {
 #content.menu {
     margin: auto;
     text-align: center;
+    height: inherit;
 }
 
-/* Menu title */
+/* Page titles */
 
-.menu-title {
+.title {
     font-size: 3rem;
     padding-bottom: 20px;
 }
@@ -42,6 +43,28 @@ body {
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+}
+
+/*About us page*/
+
+#content.about {
+    margin: auto;
+    text-align: center;
+    height: inherit;
+}
+
+.about-wrapper {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-body {
+    background-color: rgb(255,235,205,0.9);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -75,12 +98,14 @@ button, input[type="submit"], input[type="reset"] {
 .small {
     font-size: 2rem;
     padding-top: 10px;
+    font-style: italic;
 }
 
 .big {
     font-size: 4rem;
     line-height: 3.5rem;
     padding-bottom: 10px;
+    font-weight: 500;
 }
 
 .small,

@@ -8,8 +8,8 @@ function drawHomepage() {
     textWrapper.classList.add("text-wrapper");
     content.appendChild(textWrapper);
 
-    addItem("small", textWrapper, "You can eat them.");
-    addItem("big", textWrapper, "Eat Sanrio Characters.");
+    addItem("small", "", textWrapper, "You can eat them.");
+    addItem("big", "", textWrapper, "Eat Sanrio Characters.");
 }
 
 export { drawHomepage };

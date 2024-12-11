@@ -1,6 +1,7 @@
 import "./styles.css";
 import { drawHomepage } from "./homepage.js";
 import { drawMenu } from "./menu.js";
+import { drawAbout } from "./aboutus.js"
 
 alert("AAAAH!!!");
 
@@ -21,15 +22,22 @@ menuButton.addEventListener("click", () => {
     drawPage(drawMenu);
 })
 
+aboutButton.addEventListener("click", () => {
+    drawPage(drawAbout);
+})
+
 function drawPage(pageFunction) {
     console.log("Erasing content.");
     content.innerHTML = "";
     pageFunction();
 }
 
-function addItem(classToAdd, appendTo, innerHTML, type = "div") {
+function addItem(classToAdd, secondClassToAdd, appendTo, innerHTML, type = "div") {
     const newElement = document.createElement(type);
     newElement.classList.add(classToAdd);
+    if (secondClassToAdd != "") {
+        newElement.classList.add(secondClassToAdd);
+    }
     newElement.innerHTML = innerHTML;
     appendTo.appendChild(newElement);
 }

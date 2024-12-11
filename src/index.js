@@ -3,21 +3,17 @@ import backgroundImg from "./assets/purin.jpg";
 alert("AAAAH!!!");
 const content = document.getElementById("content");
 
-const textContainer = document.createElement("div");
-textContainer.classList.add("text-wrapper");
-content.appendChild(textContainer);
+const textWrapper = document.createElement("div");
+content.appendChild(textWrapper);
 
-const smallText = document.createElement("div");
-smallText.classList.add("title-text", "small");
-smallText.textContent = "You can eat them";
-textContainer.appendChild(smallText);
+addItem("small", textWrapper, "You can eat them.");
+addItem("big", textWrapper, "Eat Sanrio Characters.");
+addItem("footer", content, "Made by Kate Schumacher");
 
-const bigText = document.createElement("div");
-bigText.classList.add("title-text", "big");
-bigText.textContent = "Eat Sanrio Characters."
-textContainer.appendChild(bigText);
+function addItem(classToAdd, appendTo, text, type="div") {
+    const newElement = document.createElement(type);
+    newElement.classList.add(classToAdd);
+    newElement.textContent = text;
+    appendTo.appendChild(newElement);
+}
 
-const footer = document.createElement("div");
-footer.classList.add("footer");
-footer.textContent = "Made by Kate Schumacher";
-content.appendChild(footer); 

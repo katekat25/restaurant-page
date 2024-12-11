@@ -4,6 +4,8 @@ function drawMenu() {
     content.className = "";
     content.classList.add("menu");
 
+    addItem("menu-title", content, "Menu");
+
     const menuWrapper = document.createElement("div");
     menuWrapper.classList.add("menu-wrapper");
     content.appendChild(menuWrapper);

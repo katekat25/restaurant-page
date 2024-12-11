@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -8,14 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Crimson Text", serif;
 }
 
-/*Page wrapper*/
+/*Page wrapper for menu*/
 
 #content.menu {
     margin: auto;
     text-align: center;
 }
+
+/* Menu title */
+
+.menu-title {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+/* Menu cards */
 
 .menu-item {
     height: 200px;

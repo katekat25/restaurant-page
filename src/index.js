@@ -3,8 +3,6 @@ import { drawHomepage } from "./homepage.js";
 import { drawMenu } from "./menu.js";
 import { drawAbout } from "./aboutus.js"
 
-alert("AAAAH!!!");
-
 const homeButton = document.querySelector("button:nth-of-type(1)");
 const menuButton = document.querySelector("button:nth-of-type(2)");
 const aboutButton = document.querySelector("button:nth-of-type(3)");
